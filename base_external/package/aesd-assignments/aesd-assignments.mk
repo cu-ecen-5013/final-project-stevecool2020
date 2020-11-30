@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 9a950c70311ee5dbad7dc3a72b7984c3a274ac17
+AESD_ASSIGNMENTS_VERSION = 486d0eb07df28f83d159ee1b33a1dea199182169
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -20,7 +20,8 @@ endef
 
 # TODO add your writer, finder and tester utilities/scripts to the installation steps below
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/test-led $(TARGET_DIR)/usr/bin/
+	$(INSTALL) -m 0755 $(@D)/morse-loopback $(TARGET_DIR)/usr/bin/
+	$(INSTALL) -m 0755 $(@D)/file-transfer-app $(TARGET_DIR)/usr/bin/
 endef
 
 
